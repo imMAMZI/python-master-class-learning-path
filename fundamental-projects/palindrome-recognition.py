@@ -47,10 +47,10 @@ def main():
         
         else:
             output = config_output(
-                        is_palindrome(
-                            get_input()
-                        )
-                    )
+                is_palindrome(
+                    get_input()
+                )
+            )
             print(output)
 
 
