@@ -32,7 +32,7 @@ def validate_order(order) -> bool:
 def main():
     print("Hey there! This program helps you detect if a string is palindrome or not!\n")
     while True:
-        order = int(input("What do you wanna do?\n"
+        order = int(input("\nWhat do you wanna do?\n"
             "1. Detect a palindrome string\n"
             "2. Exit\n" \
             "order: "
@@ -42,8 +42,9 @@ def main():
             continue
 
         if order == 2:
-            print("Goodbye!")
+            print("\nGoodbye!")
             break
+        
         else:
             output = config_output(
                         is_palindrome(
@@ -53,4 +54,5 @@ def main():
             print(output)
 
 
-main()
+if __name__ == "__main__":
+    main()
